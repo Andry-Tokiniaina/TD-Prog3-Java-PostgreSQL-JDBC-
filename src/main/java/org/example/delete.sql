@@ -1,1 +1,0 @@
-update product set name = 'Ecran Samsung 27' where name = 'Ecran Samsung 27 5';
