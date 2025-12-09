@@ -25,7 +25,7 @@ public class Main {
         System.out.println("*****");
         List<Product> page4 = dr.getProductList(2, 2);
         page4.forEach(System.out::println);
-
+        System.out.println("*****");
         List<Product> testCriteria1 = dr.getProductsByCriteria(
                 "Dell",
                 null,
@@ -33,7 +33,7 @@ public class Main {
                 null
         );
         testCriteria1.forEach(System.out::println);
-
+        System.out.println("*****");
         List<Product> testCriteria2 = dr.getProductsByCriteria(
                 null,
                 "info",
@@ -41,7 +41,7 @@ public class Main {
                 null
         );
         testCriteria2.forEach(System.out::println);
-
+        System.out.println("*****");
         List<Product> testCriteria3 = dr.getProductsByCriteria(
                 "Iphone",
                 "mobile",
@@ -49,7 +49,7 @@ public class Main {
                 null
         );
         testCriteria3.forEach(System.out::println);
-
+        System.out.println("*****");
         List<Product> testCriteria4 = dr.getProductsByCriteria(
               null,
               null,
@@ -57,7 +57,7 @@ public class Main {
                 Instant.parse("2024-03-01T00:00:00Z")
         );
         testCriteria4.forEach(System.out::println);
-
+        System.out.println("*****");
         List<Product> testCriteria5 = dr.getProductsByCriteria(
                 "Samsung",
                 "bureau",
@@ -65,7 +65,7 @@ public class Main {
                 null
         );
         testCriteria5.forEach(System.out::println);
-
+        System.out.println("*****");
         List<Product> testCriteria6 = dr.getProductsByCriteria(
                 "Sony",
                 "Informatique",
@@ -73,7 +73,7 @@ public class Main {
                 null
         );
         testCriteria6.forEach(System.out::println);
-
+        System.out.println("*****");
         List<Product> testCriteria7 = dr.getProductsByCriteria(
                 null,
                 "audio",
@@ -81,7 +81,7 @@ public class Main {
                 Instant.parse("2024-12-01T00:00:00Z")
         );
         testCriteria7.forEach(System.out::println);
-
+        System.out.println("*****");
         List<Product> testCriteria8 = dr.getProductsByCriteria(
                 null,
                 null,
@@ -89,7 +89,7 @@ public class Main {
                 null
         );
         testCriteria8.forEach(System.out::println);
-
+        System.out.println("*****");
         List<Product> testCriteriaPage1 = dr.getProductsByCriteria(
                 null,
                 null,
@@ -99,7 +99,7 @@ public class Main {
                 10
         );
         testCriteriaPage1.forEach(System.out::println);
-
+        System.out.println("*****");
         List<Product> testCriteriaPage2 = dr.getProductsByCriteria(
                 "Cell",
                 null,
@@ -109,7 +109,7 @@ public class Main {
                 2
         );
         testCriteriaPage2.forEach(System.out::println);
-
+        System.out.println("*****");
         List<Product> testCriteriaPage3 = dr.getProductsByCriteria(
                 null,
                 "informatique",

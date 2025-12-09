@@ -3,7 +3,7 @@ INSERT INTO Product (id, name, price, creation_datetime) VALUES
  (2, 'iPhone 13', 5200.0, '2024-02-01 14:10:00'),
  (3, 'Casque Sony WH1000', 890.50, '2024-02-10 16:45:00'),
  (4, 'Clavier Logitech', 180.0, '2024-03-05 11:20:00'),
- (5, 'Ecran Samsung 27 5', 1200.0, '2024-03-18 08:00:00');
+ (5, 'Ecran Samsung 27', 1200.0, '2024-03-18 08:00:00');
 
 INSERT INTO Product_category (id, name, product_id) VALUES
 (1, 'Informatique', 1),

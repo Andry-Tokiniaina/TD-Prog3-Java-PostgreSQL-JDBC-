@@ -15,4 +15,9 @@ public class Product {
         this.CreationDatetime = timestamp;
         this.category = category;
     }
+
+    @Override
+    public String toString() {
+        return "Product{" + "id=" + id + ", name=" + name + '}';
+    }
 }

@@ -40,7 +40,7 @@ public class DataRetriever {
                         "Product_category.id as c_id, Product_category.name as c_name " +
                         "from Product " +
                         "inner join Product_category " +
-                        "on Product_category.product_id = Product.id " +
+                        "on Product.id = Product_category.product_id " +
                         "limit ? offset ?;";
         List<Product> products = new ArrayList<>();
         try {
@@ -87,9 +87,9 @@ public class DataRetriever {
             PreparedStatement stmt = connection.prepareStatement(query);
 
             stmt.setString(1, productName);
-            stmt.setString(2, productName);
+            stmt.setString(2, "%"+productName+"%");
             stmt.setString(3, categoryName);
-            stmt.setString(4, categoryName);
+            stmt.setString(4, "%"+categoryName+"%");
             if (creationMin != null) {
                 stmt.setTimestamp(5, Timestamp.from(creationMin));
                 stmt.setTimestamp(6, Timestamp.from(creationMin));
@@ -147,9 +147,9 @@ public class DataRetriever {
             Connection connection = this.dbConnexion.getDBConnection();
             PreparedStatement stmt = connection.prepareStatement(query);
             stmt.setString(1, productName);
-            stmt.setString(2, productName);
+            stmt.setString(2, "%"+productName+"%");
             stmt.setString(3, categoryName);
-            stmt.setString(4, categoryName);
+            stmt.setString(4, "%"+categoryName+"%");
             if (creationMin != null) {
                 stmt.setTimestamp(5, Timestamp.from(creationMin));
                 stmt.setTimestamp(6, Timestamp.from(creationMin));
